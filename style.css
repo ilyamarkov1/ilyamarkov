@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color: #C6F7E4;
+    font-family: 'Georgia', serif;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: dimgrey;
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+.logo{
+    color:aliceblue;
+    font-size: 150%; 
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    padding: 0.2em;
+    font-size: 130%;
+    color:aliceblue;
+    text-decoration: none;
+}
+
+header {
+    color: black;
+    padding: 80px 10px 25px 10px;
+    text-align: center;
+    display: block;
+}
+header b {
+    font-size: 2rem;
+    font-style:inherit;
+}
+.resume section, #bio {
+    width: 90%;
+    margin: auto;
+    background-color: aliceblue;
+    font-size: 25px;
+}
+h2 {
+    font-family: 'Georgia', serif;
+    font-weight: 500;
+    display: block;
+    font-size: 2.3em;
+}
+p {
+    font-weight: normal;
+    font-size: 26.5px;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: dimgray;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.logo {
+    font-size: 160%;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    padding: 0.2em;
+    font-size: 130%;
+    color: black;
+    background-color: white;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+.resume section, #bio {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 20px 20px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+#bio {
+    padding: 5px 20px 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
